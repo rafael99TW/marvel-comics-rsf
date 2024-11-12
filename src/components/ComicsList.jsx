@@ -15,7 +15,7 @@ function ComicsList({ showFavorites }) {
         const ts = new Date().getTime().toString();
         const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
     
-        const url = `https://gateway.marvel.com/v1/public/comics?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+        const url = `https://gateway.marvel.com/v1/public/comics?orderBy=-modified&ts=${ts}&apikey=${publicKey}&hash=${hash}`;
     
         try {
             const response = await fetch(url);
