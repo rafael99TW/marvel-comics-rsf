@@ -1,0 +1,23 @@
+.comic-card {
+    cursor: pointer;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+}
+
+.comic-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.comic-title {
+    font-size: 16px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 8px;
+}
